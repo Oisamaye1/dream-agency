@@ -33,13 +33,13 @@ const Cards: React.FC<Props> = ({icon, title, description}) => {
 
 const WorkCards: React.FC<WorkProps> = ({image, title, button}) => {
     return (
-      <div className='bg-slate-100 p-2 flex flex-col gap-2 rounded-lg w-96'>
+      <div className='bg-slate-100 p-2 flex flex-col gap-2 rounded-lg xs:w-6/12'>
           <div className=' flex flex-col justify-center items-center mb-2'>
               <Image src={image} alt='work'/>
           </div>
           <div className='flex justify-between items-center'>
-          <h3 className='font-bold text-gray-800 text-xs'>{title}</h3>
-          <Link href={button}><Button className='bg-transparent shadow-none px-1  text-xs text-black ring-1 ring-black'>View Work</Button></Link>
+          <h3 className='font-bold text-gray-600 text-sm'>{title}</h3>
+          <Link href={button}><Button className='bg-transparent shadow-none px-5 h-7 rounded-full  text-xs text-gray-600 ring-1 ring-gray-600'>View Work</Button></Link>
           </div>
           
       </div>
