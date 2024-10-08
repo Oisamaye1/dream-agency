@@ -9,15 +9,19 @@ import {Cards, WorkCards} from "@/components/cards";
 import { CircleArrowLeft, CircleArrowRight, Globe, MonitorCheck, Smartphone } from "lucide-react";
 import TestimonialCards from "@/components/TestimonialCards";
 import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
     <div>
 
+      {/* NavBar section starts here */}
+
+      <NavBar />
+
       {/* Hero Section Starts Here */}
 
-      <div className=" relative">
-        {/* <Image src={vector} className="absolute -right-12 -top-10" width={450} alt="vector" /> */}
+      <div id="Hero" className=" relative">
         <section>
           <MaxWidthWrapper className="pb-24 pt-24 sm:grid sm:grid-cols-2 sm:pb-32 lg:gap-x-10 sm:gap-x-3 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-32 justify-center align-middle">
 
@@ -46,7 +50,7 @@ export default function Home() {
 
 
 
-      <section className="py-20 relative ">
+      <section className="py-20 relative " id="What-we-do">
         <div className="bg-sky-50 -z-10 w-full absolute h-full top-0 rounded-r-full"></div>
         
         <MaxWidthWrapper>
@@ -79,7 +83,7 @@ export default function Home() {
 
       {/* About Us Section Starts Here */}
 
-      <div className=" relative">
+      <div className=" relative" id="About-us">
         <section>
           <MaxWidthWrapper className="pt-24 sm:grid sm:grid-cols-5 sm:pb-32 lg:gap-x-10 sm:gap-x-10 xl:gap-x-8 justify-center align-middle">
 
@@ -109,7 +113,7 @@ export default function Home() {
 
       {/* OUR RECENT WORK SECTION STARTS HERE */}
 
-      <div className=" relative mt-24">
+      <div className=" relative mt-24 py-10" id="Recent-works">
         
         <section >
 
@@ -154,10 +158,9 @@ export default function Home() {
 
       {/* Testimonial Section Continues Here */}
 
-      <div className="mt-24">
+      <div className="mt-24" id="Testimonial">
         <MaxWidthWrapper>
           <section>
-
             <div className="col-span-3 text-center max-sm:pb-5 mb-5">
               <h3 className="font-extrabold text-indigo-900 text-2xl lg:text-4xl">Our Testimonial</h3>
               <h3 className="text-2xl lg:text-4xl text-indigo-900">What Our Clients Are Saying</h3>
@@ -173,8 +176,10 @@ export default function Home() {
       </div>
 
       {/* Footer Section Starts Here */}
-
-      <Footer />
+      <section id="Contact-us">
+        <Footer />
+      </section>
+      
     
     </div>
    
