@@ -1,4 +1,3 @@
-import { Globe } from 'lucide-react'
 import React, { ReactNode } from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'

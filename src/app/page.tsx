@@ -2,11 +2,10 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import heroImg from "@/../public/images/heroimg.png"
-import vector from "@/../public/images/Vector 1.png"
 import aboutus from "@/../public/images/aboutimg.png"
 import work from "@/../public/images/work.png"
 import {Cards, WorkCards} from "@/components/cards";
-import { CircleArrowLeft, CircleArrowRight, Globe, MonitorCheck, Smartphone } from "lucide-react";
+import { CircleArrowLeft, CircleArrowRight, Globe} from "lucide-react";
 import TestimonialCards from "@/components/TestimonialCards";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
